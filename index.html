@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>biglietto-treno-form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</head>
+
+
+<body class="">
+    <header>
+
+    </header>
+
+    <main>
+        <div class="container  ">
+        
+            <div class=" row bg-danger p-5 mt-5">
+                <h1 class="text-light text-center">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+                <div class="col-10 offset-1 bg-light">
+                    <div class="row m-5">
+                        <div class="col bg-light offset-2">
+                            <p class="">Nome  Cognome</p>
+                            <input type="text" placeholder="scrive nome e cognome" id="name">
+                        </div>
+                        <div class="col bg-light">
+                            <p class="">km da percorrere</p>
+                            <input type="number" placeholder="inserisci i km" id="km">
+                        </div>
+                        <div class="col bg-light">
+                            <p class="">facia d'età</p>
+                            <select name="" id="fasciaEta">
+                                <option value="1">Minorenne(&lt18)</option>
+                                <option value="2">Maggiorenne(18-65)</option>
+                                <option value="3">Senior(+65)</option>
+                            </select>
+
+                        </div>
+                    </div>
+                    <div class="row gap-2 m-5">
+                        <button type="button" id="genera" class="col-2  offset-4 btn btn-danger">Genera </button>
+                        <button type="button" id="reset" class="col-2   btn btn-danger">Annula</button>
+                    </div>
+                </div>
+                <h1 class="text-light text-center mt-5">Il tuo biglietto</h1>
+                
+                <div class=" col-10 offset-1 bg-light">
+                    <h2>DETAGLIO PASSEGGERI</h2>
+                    
+                    
+                    <div class="row ">
+                        <hr class="m-0">
+                        <div class="col-md-4  bg-secondary"> 
+                            <h4 class="text-center">NOME DEL PASSEGGERO</h4>
+                            <P class="text-center" id="passeggero"></P>
+                        </div>
+
+                        <div class="col-md-8 row">
+                            <div class="col bg-light ">
+                                <p class="h5 pb-5">Offerta</p>
+                                <p id="offertaFinale"></p>
+                            </div>
+                
+                            <div class="col bg-light">
+                                <p class="h5 pb-5">Carrozza</p>
+                                <p>5</p>
+                            </div>
+
+                           
+                            <div class="col bg-light">
+                                <p class="h5 pb-5">Codice CP</p>
+                                <p>92911</p>
+                            </div>
+
+                     
+                            <div class="col bg-light">
+                                <p class="h5 pb-5">Costo biglietto</p>
+                                <p id="costoBiglietto"></p>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
+
+
+                     
+                    
+                    
+                    
